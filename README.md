@@ -153,4 +153,4 @@ npm start     # Starts on http://localhost:3000
 MIT License — free to use for portfolio and learning purposes.
 
 ---
-Made with ❤️ for learning full-stack development
+Developed by Sunny Kumar as a full-stack development learning project.
