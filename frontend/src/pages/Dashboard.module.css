@@ -1,0 +1,37 @@
+.page { max-width: 860px; }
+.loader { color: var(--text2); padding: 40px; }
+.topRow { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 28px; gap: 16px; flex-wrap: wrap; }
+.greeting { font-size: 24px; font-family: 'Syne', sans-serif; }
+.date { color: var(--text2); font-size: 14px; margin-top: 4px; }
+.addBtn { display: flex; align-items: center; gap: 8px; background: var(--accent); color: #0d0d0f; font-weight: 600; padding: 11px 20px; border-radius: 12px; white-space: nowrap; }
+.addBtn:hover { background: var(--accent2); }
+
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+.metricCard { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 16px; }
+.metricIcon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.metricLabel { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+.metricValue { font-size: 22px; font-family: 'Syne', sans-serif; font-weight: 700; }
+
+.chartCard { background: var(--bg2); border: 1px solid var(--border); border-radius: 18px; padding: 24px; margin-bottom: 24px; }
+.chartHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.chartHeader h3 { font-size: 16px; }
+
+.recentCard { background: var(--bg2); border: 1px solid var(--border); border-radius: 18px; padding: 24px; }
+.recentHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.recentHeader h3 { font-size: 16px; }
+.viewAll { font-size: 13px; color: var(--accent); display: flex; align-items: center; gap: 4px; }
+.viewAll:hover { opacity: 0.8; }
+
+.txList { display: flex; flex-direction: column; }
+.txItem { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.txItem:last-child { border-bottom: none; }
+.txEmoji { width: 40px; height: 40px; background: var(--bg3); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.txInfo { flex: 1; }
+.txName { font-size: 14px; font-weight: 500; }
+.txMeta { font-size: 12px; color: var(--text2); margin-top: 2px; }
+.txAmount { font-size: 15px; font-weight: 600; font-family: 'Syne', sans-serif; white-space: nowrap; }
+
+@media (max-width: 600px) {
+  .metrics { grid-template-columns: 1fr; }
+  .metricCard { padding: 16px; }
+}

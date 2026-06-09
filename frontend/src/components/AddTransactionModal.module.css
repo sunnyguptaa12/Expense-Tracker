@@ -1,0 +1,34 @@
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000; padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+.modal {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  width: 100%; max-width: 460px;
+  padding: 28px;
+  animation: fadeUp 0.3s ease;
+}
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.header h3 { font-size: 18px; }
+.closeBtn { background: var(--bg3); color: var(--text2); padding: 6px; display: flex; border-radius: 8px; }
+.closeBtn:hover { color: var(--text); }
+
+.typeTabs { display: flex; background: var(--bg3); border-radius: 12px; padding: 4px; margin-bottom: 20px; }
+.typeBtn { flex: 1; padding: 9px; border-radius: 9px; font-size: 14px; font-weight: 500; background: transparent; color: var(--text2); }
+.typeBtn.expActive { background: var(--red-soft); color: var(--red); }
+.typeBtn.incActive { background: var(--green-soft); color: var(--green); }
+
+.form { display: flex; flex-direction: column; gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; color: var(--text2); }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.saveBtn { margin-top: 6px; background: var(--red); color: #fff; font-weight: 600; font-size: 15px; padding: 13px; width: 100%; border-radius: 12px; }
+.saveBtn.incSave { background: var(--green); color: #0d0d0f; }
+.saveBtn:hover { opacity: 0.88; }
+.saveBtn:disabled { opacity: 0.5; cursor: not-allowed; }

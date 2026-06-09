@@ -1,0 +1,59 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 20px;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px;
+  animation: fadeUp 0.4s ease both;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+.title { font-size: 22px; margin-bottom: 6px; }
+.sub { color: var(--text2); font-size: 14px; margin-bottom: 28px; }
+.form { display: flex; flex-direction: column; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; color: var(--text2); font-weight: 500; }
+.passWrap { position: relative; }
+.passWrap input { padding-right: 44px; }
+.eyeBtn { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: transparent; color: var(--text3); display: flex; align-items: center; padding: 4px; }
+.eyeBtn:hover { color: var(--text); }
+.submitBtn {
+  margin-top: 8px;
+  background: var(--accent);
+  color: #0d0d0f;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+}
+.submitBtn:hover { background: var(--accent2); }
+.submitBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+.switchText { text-align: center; margin-top: 20px; font-size: 14px; color: var(--text2); }
+.switchText a { color: var(--accent); font-weight: 500; }
+.demoBox {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: var(--bg3);
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--text2);
+  text-align: center;
+}
+.demoBox strong { color: var(--accent); }
